@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Main from "./pages/Main";
+import StatusM from "./pages/React/StatusM";
+import Nav from "./components/Nav";
+import LifeCycle from "./pages/React/LifeCycle";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Nav />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/React/StatusM" element={<StatusM />} />
+        <Route path="/React/LifeCycle" element={<LifeCycle />} />
+      </Routes>
+    </>
   );
 }
 
