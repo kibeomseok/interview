@@ -2,13 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Content = styled.div`
-  padding-left: 48px;
-  padding-top: 8px;
-  width: 100%;
-  h1{
+    padding-left: 48px;
+    padding-top: 8px;
+    width: 100%;
     text-align: center;
     font-size: 40px;
-  }
 `;
 
 function Main() {
